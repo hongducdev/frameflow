@@ -31,7 +31,6 @@
         frameflow_shop_quantity();
         frameflow_submenu_responsive();
         frameflow_panel_anchor_toggle();
-        frameflow_slider_column_offset();
         frameflow_height_ct_grid();
         frameflow_shop_view_layout();
         frameflow_menu_divider_move();
@@ -105,7 +104,6 @@
         if (pxl_window_width > 767) {
             frameflow_button_parallax();
             frameflow_button_parallax1();
-            HeightTitles();
         }
 
         setTimeout(function () {

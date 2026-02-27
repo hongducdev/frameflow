@@ -362,29 +362,6 @@
     }
 }
 
-.pxl-icon-list.style-5 {
-
-    svg path,
-    svg line,
-    svg rect {
-        transition: all 1.3s linear;
-    }
-
-    svg circle {
-        transition: all 3s linear;
-    }
-}
-
-.pxl-icon-list.style-5.animated {
-
-    svg path,
-    svg line,
-    svg rect,
-    svg circle {
-        stroke-dashoffset: 0;
-    }
-}
-
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
     .pxl-icon-list.style-5.animated svg {
@@ -718,34 +695,5 @@
 .h-100vh {
     img {
         height: 100vh;
-    }
-}
-
-#cardSection {
-    >.elementor-element {
-        --header-sticky-height: 130px;
-
-        @media (max-height: 1000px) {
-            --header-sticky-height: 80px;
-        }
-
-        @media (max-height: 800px) {
-            --header-sticky-height: 30px;
-        }
-
-        @media (min-width: 1201px) {
-            position: sticky;
-            height: calc(100vh - var(--header-sticky-height));
-            top: var(--header-sticky-height);
-        }
-
-        >.elementor-element.elementor-widget-pxl_image_carousel {
-            min-height: 0;
-
-            .pxl-image-carousel2,
-            .pxl-item-wrapper {
-                height: inherit;
-            }
-        }
     }
 }

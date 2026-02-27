@@ -159,10 +159,6 @@ function frameflow_scripts()
 
     /* Woocommerce - chỉ load trên trang WooCommerce */
     if (class_exists('WooCommerce')) {
-        wp_enqueue_style('pxl-dual-cart', get_template_directory_uri() . '/assets/css/pxl-dual-cart.css', array(), $frameflow_version->get('Version'));
-        if (is_cart()) {
-            wp_enqueue_script('pxl-dual-cart', get_template_directory_uri() . '/assets/js/pxl-dual-cart.js', array('jquery'), $frameflow_version->get('Version'), true);
-        }
         if (function_exists('is_woocommerce') && (is_woocommerce() || is_cart() || is_checkout() || is_account_page())) {
             wp_enqueue_script('pxl-woocommerce', get_template_directory_uri() . '/woocommerce/js/woocommerce.js', array('jquery'), $frameflow_version->get('Version'), true);
         }
