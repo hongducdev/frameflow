@@ -1,0 +1,59 @@
+.swiper-carousel {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden
+}
+
+.swiper-carousel .swiper-slide,
+.swiper-carousel swiper-slide {
+    position: relative
+}
+
+.swiper-cards {
+    overflow: visible;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.swiper-cards .pxl-swiper-container {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.swiper-cards .pxl-swiper-wrapper {
+    transform-style: preserve-3d;
+    min-width: 0;
+}
+
+.swiper-3d {
+    perspective: 1200px;
+}
+
+.swiper-cards .swiper-slide {
+    transform-origin: center bottom;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.swiper-cards .pxl-swiper-slide {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Slider */
+
+.pxl-swiper-slide {
+    z-index: -1;
+
+    &.swiper-slide-active {
+        z-index: 1;
+
+        .pxl-slide-image {
+            animation-delay: 8s;
+            animation: flipInY 2s;
+        }
+    }
+}
